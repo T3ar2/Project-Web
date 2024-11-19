@@ -98,8 +98,8 @@ header .image-text .header-text{
     color: var(--sidebar-color);
     font-size: 22px;
 }
-#img-toggle{
-    height: 10px;
+.img-toggle{
+    height: 20px;
 }
 #menu-bar .images{
   height: 20px;  
