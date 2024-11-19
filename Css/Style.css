@@ -140,12 +140,11 @@ header .image-text .header-text{
     display: flex;
     align-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 } */
-.menu-bar .mode i{
-=======
-}
+
 #menu-bar .mode i{
->>>>>>> f931489ba3d2008f8b740312200ec8987e5f3f78
+/* >>>>>>> f931489ba3d2008f8b740312200ec8987e5f3f78 */
     position: absolute;
     
 }
