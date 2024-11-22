@@ -225,20 +225,13 @@ header .image-text .header-text{
 
 /* BODY CSS */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
   .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ddd;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    background-color: var(--body-color);
+    padding: 15px 20px;
+    /* border-bottom: 1px solid #ccc; */
   }
   
   .menu-icon {
