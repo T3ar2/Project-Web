@@ -26,7 +26,7 @@ HTML:
   height: 100vh;
   background-color: #333;
   transform: translateX(-250px);
-  transition: transform 0.5s;
+  transition: var(--trans-05);
 }
 
 .botao-setinha {
