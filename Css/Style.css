@@ -107,7 +107,7 @@ body{
     top: 0;
     height: 100%;
     width: 250px;
-    background-color: var(--sidebar-color);
+    /* background-color: var(--sidebar-color); */
     padding: 10px 14px;
 }
 .sidebar li{
@@ -288,6 +288,7 @@ section {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 
 nav {
@@ -408,35 +409,65 @@ nav a:hover {
 .categoria ul {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  margin: 0;
+  display: flex; /* Para alinhar itens horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
 }
 
-.categoria li {
-  width: 200px;
-  background: #1f1f1f;
-  border-radius: 10px;
+.categoria ul li {
+  position: relative; /* Para posicionar o texto sobre a imagem */
+  width: 200px; /* Largura fixa para os itens */
+  height: 200px; /* Altura fixa para os itens */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-size: cover; /* Faz a imagem cobrir toda a área do item */
+  background-position: center; /* Centraliza a imagem */
+  overflow: hidden; /* Garante que o texto ou imagem não ultrapassem os limites */
+  display: flex;
+  align-items: flex-end; /* Alinha o texto na parte inferior */
+  justify-content: center; /* Centraliza horizontalmente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  text-align: center;
+}
+
+.categoria ul li p {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
+  margin: 0;
   padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+  border-radius: 5px;
 }
 
 .categoria li:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.categoria img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.categoria ul li:nth-child(1) {
+  background-image: url('/Img/astrobot.jpeg');
 }
 
-.categoria p {
-  margin: 0;
-  font-size: 1em;
-  color: #ccc;
+.categoria ul li:nth-child(2) {
+  background-image: url('/Img/balatro.png');
+}
+
+.categoria ul li:nth-child(3) {
+  background-image: url('game3.jpg');
+}
+
+.categoria ul li:nth-child(4) {
+  background-image: url('game4.jpg');
+}
+
+.categoria ul li:nth-child(5) {
+  background-image: url('game5.jpg');
+}
+
+.categoria ul li:nth-child(6) {
+  background-image: url('game6.jpg');
 }
 
 .console-images {
