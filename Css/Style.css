@@ -274,6 +274,7 @@ header .image-text .header-text{
   scroll-snap-align: start;
   /* Faz o topo da seção "encaixar" */
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,50 +334,78 @@ nav a:hover {
 }
 
 /* PRIMEIRA SESSAO STYLE  */
-.sessao-principal {
-  padding: 20px;
+
+.noticias-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.noticias-header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.noticias-grid {
+  display: grid;
+  max-width: 1200px; /* Limita a largura máxima para telas grandes */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+
+.noticia {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.noticia-row {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.noticia-box {
-  flex: 1;
-  max-width: 300px;
-  height: 150px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  background-color: #f9f9f9; /* Cor de fundo leve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
   padding: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
 }
 
-.noticia-box-importante {
-  flex: 1;
-  max-width: 33%;
-  height: 150px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
+.noticia img {
+  width: 100%; /* Imagem cobre toda a largura */
+  height: 150px; /* Altura fixa */
+  object-fit: cover; /* Ajusta a imagem sem distorção */
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.noticia h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+.noticia p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
+.noticia p strong {
   font-weight: bold;
-  font-size: 14px;
+  color: #333;
+}
+
+/* Efeito hover */
+.noticia:hover {
+  transform: translateY(-10px); /* Elevação ao passar o mouse */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 
 /* AWARDS STYLE  */
 #game-awards {
   padding: 20px;
-  /* max-width: 1200px; */
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
@@ -455,19 +484,19 @@ nav a:hover {
 }
 
 .categoria ul li:nth-child(3) {
-  background-image: url('game3.jpg');
+  background-image: url('/Img/wukong.png');
 }
 
 .categoria ul li:nth-child(4) {
-  background-image: url('game4.jpg');
+  background-image: url('/Img/eldenRing.png');
 }
 
 .categoria ul li:nth-child(5) {
-  background-image: url('game5.jpg');
+  background-image: url('/Img/FFVII.png');
 }
 
 .categoria ul li:nth-child(6) {
-  background-image: url('game6.jpg');
+  background-image: url('/Img/metaphor.png');
 }
 
 .console-images {
