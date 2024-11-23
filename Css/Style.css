@@ -166,6 +166,7 @@ header .image-text .header-text{
 }
 .img-toggle{
     height: 20px;
+    left: 500px;
 }
 #menu-bar .images {
   height: 20px;  
@@ -230,12 +231,12 @@ header .image-text .header-text{
 
  /* TOPBAR STYLE */
 .top-bar {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   padding: 15px 20px;
   /* border-bottom: 1px solid #ccc; */
 }

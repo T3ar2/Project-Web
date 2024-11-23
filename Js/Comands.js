@@ -1,13 +1,13 @@
 // <<<<<<< HEAD
-const botaoSetinha = document.getElementById('botao-setinha');
-const menuLateral = document.querySelector('.menu-lateral');
+// const botaoSetinha = document.getElementById('botao-setinha');
+// const menuLateral = document.querySelector('.menu-lateral');
 
-botaoSetinha.addEventListener('click', () => {
-  menuLateral.classList.toggle('mostrar-menu');
-});
+// botaoSetinha.addEventListener('click', () => {
+//   menuLateral.classList.toggle('mostrar-menu');
+// });
 
 
-const botaoEscondeMenu = document.getElementById("img-toggle");
+const botaoEscondeMenu = document.getElementById("botaoToggle");
 const sidebar = document.querySelector(".sidebar");
 
 botaoEscondeMenu.addEventListener("click", moverMenu)
