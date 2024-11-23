@@ -357,10 +357,11 @@ nav a:hover {
   gap: 30px;
 }
 
-
 .noticia {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
   background-color: #f9f9f9; /* Cor de fundo leve */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
   padding: 20px;
@@ -371,7 +372,7 @@ nav a:hover {
 
 .noticia img {
   width: 100%; /* Imagem cobre toda a largura */
-  height: 150px; /* Altura fixa */
+  height: 90%; /* Altura fixa */
   object-fit: cover; /* Ajusta a imagem sem distorção */
   margin-bottom: 15px;
   border-radius: 4px;
@@ -446,7 +447,6 @@ nav a:hover {
 }
 
 .categoria ul li {
-  position: relative; /* Para posicionar o texto sobre a imagem */
   width: 200px; /* Largura fixa para os itens */
   height: 200px; /* Altura fixa para os itens */
   border-radius: 8px; /* Bordas arredondadas */
@@ -461,7 +461,6 @@ nav a:hover {
 }
 
 .categoria ul li p {
-  position: relative;
   color: white;
   font-size: 16px;
   font-weight: bold;
