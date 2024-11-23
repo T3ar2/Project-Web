@@ -223,7 +223,8 @@ header .image-text .header-text{
    opacity: 0;
 }
 .escondido {
-    left: -250px; 
+    max-width: 70px;
+    /* left: -250px;  */
 }
 
 

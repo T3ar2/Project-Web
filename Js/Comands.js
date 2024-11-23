@@ -9,15 +9,33 @@
 
 const botaoEscondeMenu = document.getElementById("botaoToggle");
 const sidebar = document.querySelector(".sidebar");
+const textoLogo = document.getElementById("textoLogo");
+const textoSubLogo = document.getElementById("textoSubLogo");
+const textoHome = document.getElementById("textoHome");
+const textoPlaystation = document.getElementById("textoPlaystation");
+const textoXbox = document.getElementById("textoXbox");
+const textoNintendo = document.getElementById("textoNintendo");
+const textoPc = document.getElementById("textoPc");
+const textoEventos = document.getElementById("textoEventos");
+const textoModo = document.getElementById("textoModoLuz");
 
 botaoEscondeMenu.addEventListener("click", moverMenu)
 
 function moverMenu(){
     sidebar.classList.toggle("escondido");
+    textoHome.textContent = "";
+    textoPlaystation.textContent = " ";
+    textoXbox.textContent = " ";
+    textoNintendo.textContent = " ";
+    textoPc.textContent = " ";
+    textoEventos.textContent = " ";
+    textoLogo.textContent = " ";
+    textoSubLogo.textContent = " ";
+    textoModo.textContent = " ";
 };
 
 const botaoLightDark = document.querySelector(".light-dark");
-const textoModo = document.querySelector("#textoModoLuz");
+// const textoModo = document.querySelector("#textoModoLuz");
 const iconeModo = document.querySelector("#iconModoLuz");
 let modoAtual = "claro"
 const root = document.documentElement;
