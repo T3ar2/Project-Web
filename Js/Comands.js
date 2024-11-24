@@ -18,35 +18,43 @@ const textoNintendo = document.getElementById("textoNintendo");
 const textoPc = document.getElementById("textoPc");
 const textoEventos = document.getElementById("textoEventos");
 const textoModo = document.getElementById("textoModoLuz");
+let escondido = "mostrando";
 
+
+// console.log(escondido)
 botaoEscondeMenu.addEventListener("click", moverMenu)
 
-function moverMenu() {
-    const isHidden = sidebar.classList.toggle("escondido");
-
-    textoHome.textContent = isHidden ? "" : "Home";
-    textoPlaystation.textContent = isHidden ? "" : "Playstation";
-    textoXbox.textContent = isHidden ? "" : "Xbox";
-    textoNintendo.textContent = isHidden ? "" : "Nintendo";
-    textoPc.textContent = isHidden ? "" : "Pc";
-    textoEventos.textContent = isHidden ? "" : "Eventos / Redes Sociais";
-    textoLogo.textContent = isHidden ? "" : "Game Área";
-    textoSubLogo.textContent = isHidden ? "" : "The best of gaming";
-    textoModo.textContent = isHidden ? "" : (modoAtual === "claro" ? "Modo escuro" : "Modo claro");
-}
-
-// function moverMenu(){
-//     sidebar.classList.toggle("escondido");
-//     textoHome.textContent = "";
-//     textoPlaystation.textContent = " ";
-//     textoXbox.textContent = " ";
-//     textoNintendo.textContent = " ";
-//     textoPc.textContent = " ";
-//     textoEventos.textContent = " ";
-//     textoLogo.textContent = " ";
-//     textoSubLogo.textContent = " ";
-//     textoModo.textContent = " ";
-// };
+function moverMenu(){
+    if(escondido == "mostrando"){
+        escondido = "escondido"
+        sidebar.classList.toggle("escondido");
+        textoHome.textContent = "";
+        textoPlaystation.textContent = "";
+        textoXbox.textContent = "";
+        textoNintendo.textContent = "";
+        textoPc.textContent = "";
+        textoEventos.textContent = "";
+        textoLogo.textContent = "";
+        textoSubLogo.textContent = "";
+        textoModo.textContent = "";
+        // console.log(escondido)
+    }
+    else{
+        escondido = "mostrando"
+        sidebar.classList.toggle("escondido");
+        textoHome.textContent = "Home";
+        textoPlaystation.textContent = "Playstation";
+        textoXbox.textContent = "Xbox";
+        textoNintendo.textContent = "Nintendo";
+        textoPc.textContent = "Pc";
+        textoEventos.textContent = "Eventos / Redes Sociais";
+        textoLogo.textContent = "Game Área";
+        textoSubLogo.textContent = "The best of gaming";
+        textoModo.textContent = " ";
+        // console.log(escondido)
+    }
+    
+};
 
 const botaoLightDark = document.querySelector(".light-dark");
 // const textoModo = document.querySelector("#textoModoLuz");
