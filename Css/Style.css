@@ -236,10 +236,6 @@ header .image-text .header-text {
 
 }
 
-.bottom-content {
-  /* padding-top: 80%; */
-}
-
 #menu-bar .mode i.light {
   opacity: 0;
 }
@@ -529,7 +525,7 @@ nav a:hover {
 }
 
 .console-images {
-  display: flex;
+  display: flex;  
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
