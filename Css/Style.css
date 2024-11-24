@@ -216,9 +216,7 @@ header .image-text .header-text {
   justify-content: space-between;
 }
 
-.light-dark {
-  background: var(--primary-color-light);
-}
+
 
 /* .menu-bar .mode .light-dark{
     height: 50px;
@@ -237,7 +235,6 @@ header .image-text .header-text {
 
 .bottom-content {
   padding-top: 80%;
-
 }
 
 #menu-bar .mode i.light {
