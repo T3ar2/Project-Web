@@ -533,7 +533,7 @@ nav a:hover {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  /* Permite ajustar se a tela for menor */
+   /* Permite ajustar se a tela for menor */
 }
 
 .console-images img {
