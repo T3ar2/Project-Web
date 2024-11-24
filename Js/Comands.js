@@ -65,7 +65,7 @@ function trocaLuz(){
         root.style.setProperty('--togle-color', '#555');
         root.style.setProperty('--text-color', '#ccc');
         textoModo.textContent = "Modo claro";
-        iconeModo.src = "./Img/light_mode.png";
+        iconeModo.src = "./Img/light-mode.png";
     }
     else{
         modoAtual = "claro"
