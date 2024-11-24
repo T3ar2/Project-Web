@@ -1,5 +1,3 @@
-
-
 /* Erick!
 
 Para fazer o menu lateral aparecer apenas quando você clicar na setinha, você pode usar o seguinte código HTML, CSS e JavaScript:
@@ -63,144 +61,165 @@ HTML:
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-:root{
-    --body-color: #e4e9f7;
-    --sidebar-color: #fff;
-    --primary-color: #695cfe;
-    --primary-color-light: #f6f5f6;
-    --togle-color:#ddd;
-    --text-color: #707070;
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5f6;
+  --togle-color: #ddd;
+  --text-color: #707070;
 
-    --trans-02:all 0.2s ease;
-    --trans-03:all 0.3s ease;
-    --trans-04:all 0.4s ease;
-    --trans-05:all 0.5s ease;
-}
-
-body{
-    height: 100vh;
-    background: var(--body-color);
-    scroll-behavior: smooth;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-.sidebar .text{
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-.sidebar .image{
-    min-width: 60px;
-    display: flex;
-    align-items: center;
-}
-.sidebar{
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 250px;
-    background-color: var(--sidebar-color);
-    padding: 10px 14px;
-}
-.sidebar li{
-    height:50px;
-    /* background-color: red; */
-    margin-top: 10px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.sidebar li .icons{
-    justify-content: center;
-    font-size: 20px;  
-}
-.sidebar li .icons, .sidebar li .icons{
-    color: var(--text-color); 
-} 
-
-.sidebar header{
-    position: relative;
-}
-.sidebar .image-text img{
-    width: 40px;
-    border-radius: 6px;
-}
-.sidebar header .image-text{
-    display: flex;
-    align-items: center;
-
-}
-header .image-text .header-text{
-    display: flex;
-    flex-direction: column;
-}
-.header-text .name{
-    font-weight: 600;
-}
-.header-text .second-name{
-    margin-top: -2px;
+  --trans-02: all 0.2s ease;
+  --trans-03: all 0.3s ease;
+  --trans-04: all 0.4s ease;
+  --trans-05: all 0.5s ease;
 }
 
-.sidebar header .toggle{
-    position: absolute;
-    top: 50%;
-    right: -25px;
-    transform: translateY(-50%);
-    height: 25px;
-    width: 25px;
-    background: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: var(--sidebar-color);
-    font-size: 22px;
+body {
+  height: 100vh;
+  background: var(--body-color);
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-.img-toggle{
-    height: 20px;
-    left: 500px;
+
+.sidebar .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
 }
-#menu-bar .images {
-  height: 20px;  
-  width: 20px; 
+
+.sidebar .image {
+  min-width: 60px;
+  display: flex;
   align-items: center;
 }
-.sidebar li a{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration:none;
-    transition: var(--trans-04);
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: var(--sidebar-color);
+  padding: 10px 14px;
 }
-.sidebar li a:hover{
-   background: var(--primary-color);
-   border-radius: 6px;
+
+.sidebar li {
+  height: 50px;
+  /* background-color: red; */
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
+
+.sidebar li .icons {
+  justify-content: center;
+  font-size: 20px;
+}
+
+.sidebar li .icons,
+.sidebar li .icons {
+  color: var(--text-color);
+}
+
+.sidebar header {
+  position: relative;
+}
+
+.sidebar .image-text img {
+  width: 40px;
+  border-radius: 6px;
+}
+
+.sidebar header .image-text {
+  display: flex;
+  align-items: center;
+
+}
+
+header .image-text .header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text .name {
+  font-weight: 600;
+}
+
+.header-text .second-name {
+  margin-top: -2px;
+}
+
+.sidebar header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  font-size: 22px;
+}
+
+.img-toggle {
+  height: 20px;
+  left: 500px;
+}
+
+#menu-bar .images {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+}
+
+.sidebar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--trans-04);
+}
+
+.sidebar li a:hover {
+  background: var(--primary-color);
+  border-radius: 6px;
+}
+
 .sidebar li a:hover .text,
-.sidebar li a:hover .icons{
-    color: var(--sidebar-color);
- }
-.nav-text{
-    padding-left: 15px;
+.sidebar li a:hover .icons {
+  color: var(--sidebar-color);
 }
-.sidebar #menu-bar{
-    height: calc(100% - 50px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.nav-text {
+  padding-left: 15px;
 }
-.light-dark{
-    background: var(--primary-color-light);
+
+.sidebar #menu-bar {
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.light-dark {
+  background: var(--primary-color-light);
+}
+
 /* .menu-bar .mode .light-dark{
     height: 50px;
     width: 60px;
@@ -210,27 +229,37 @@ header .image-text .header-text{
 <<<<<<< HEAD
 } */
 
-#menu-bar .mode i{
-/* >>>>>>> f931489ba3d2008f8b740312200ec8987e5f3f78 */
-    position: absolute;
-    
-}
-.bottom-content{
-   padding-top: 80%;
-   
-}
-#menu-bar .mode i.light{
-   opacity: 0;
-}
-.escondido {
-    max-width: 70px;
-    /* left: -250px;  */
+#menu-bar .mode i {
+  /* >>>>>>> f931489ba3d2008f8b740312200ec8987e5f3f78 */
+  position: absolute;
+
 }
 
+.bottom-content {
+  padding-top: 80%;
+
+}
+
+#menu-bar .mode i.light {
+  opacity: 0;
+}
+
+.escondido {
+  max-width: 70px;
+  /* left: -250px;  */
+}
+
+.barrinha {
+  background-color: #000000;
+  height: 5px;
+  width: 100%;
+  display: inline-block;
+  border: #000000;
+}
 
 /* BODY CSS */
 
- /* TOPBAR STYLE */
+/* TOPBAR STYLE */
 .top-bar {
   /* position: fixed; */
   display: flex;
@@ -241,6 +270,7 @@ header .image-text .header-text{
   padding: 15px 20px;
   /* border-bottom: 1px solid #ccc; */
 }
+
 .top-bar input[type="texto"] {
   flex-grow: 1;
   margin: 0 10px;
@@ -249,6 +279,7 @@ header .image-text .header-text{
   border-radius: 5px;
   max-width: 30%;
 }
+
 .menu-icon {
   font-size: 20px;
   cursor: pointer;
@@ -284,11 +315,13 @@ header .image-text .header-text{
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
+
 section {
   height: 100vh;
   padding: 20px;
   /* border: 1px solid #ccc; */
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -353,7 +386,8 @@ nav a:hover {
 
 .noticias-grid {
   display: grid;
-  max-width: 1200px; /* Limita a largura máxima para telas grandes */
+  max-width: 1200px;
+  /* Limita a largura máxima para telas grandes */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
@@ -363,8 +397,10 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 500px;
-  background-color: #f9f9f9; /* Cor de fundo leve */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  background-color: #f9f9f9;
+  /* Cor de fundo leve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra para destaque */
   padding: 20px;
   border-radius: 8px;
   overflow: hidden;
@@ -372,10 +408,12 @@ nav a:hover {
 }
 
 .noticia img {
-  width: 100%; /* Imagem cobre toda a largura */
-  height: 90%; /* Altura fixa */
-  object-fit: cover; /* Ajusta a imagem sem distorção */
-  margin-bottom: 15px;
+  width: 100%;
+  /* Imagem cobre toda a largura */
+  height: 60%;
+  /* Altura fixa */
+  object-fit: cover;
+  /* Ajusta a imagem sem distorção */
   border-radius: 4px;
 }
 
@@ -400,7 +438,8 @@ nav a:hover {
 
 /* Efeito hover */
 .noticia:hover {
-  transform: translateY(-10px); /* Elevação ao passar o mouse */
+  transform: translateY(-10px);
+  /* Elevação ao passar o mouse */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -442,22 +481,34 @@ nav a:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Para alinhar itens horizontalmente */
-  gap: 20px; /* Espaçamento entre os itens */
-  flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+  display: flex;
+  /* Para alinhar itens horizontalmente */
+  gap: 20px;
+  /* Espaçamento entre os itens */
+  flex-wrap: wrap;
+  /* Permite que os itens quebrem linha em telas menores */
 }
 
 .categoria ul li {
-  width: 200px; /* Largura fixa para os itens */
-  height: 200px; /* Altura fixa para os itens */
-  border-radius: 8px; /* Bordas arredondadas */
-  background-size: cover; /* Faz a imagem cobrir toda a área do item */
-  background-position: center; /* Centraliza a imagem */
-  overflow: hidden; /* Garante que o texto ou imagem não ultrapassem os limites */
+  width: 200px;
+  /* Largura fixa para os itens */
+  height: 200px;
+  /* Altura fixa para os itens */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  background-size: cover;
+  /* Faz a imagem cobrir toda a área do item */
+  background-position: center;
+  /* Centraliza a imagem */
+  overflow: hidden;
+  /* Garante que o texto ou imagem não ultrapassem os limites */
   display: flex;
-  align-items: flex-end; /* Alinha o texto na parte inferior */
-  justify-content: center; /* Centraliza horizontalmente */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  align-items: flex-end;
+  /* Alinha o texto na parte inferior */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra para destaque */
   text-align: center;
 }
 
@@ -465,7 +516,8 @@ nav a:hover {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  /* Sombra para legibilidade */
   margin: 0;
   padding: 10px;
   border-radius: 5px;
@@ -477,27 +529,27 @@ nav a:hover {
 }
 
 .categoria ul li:nth-child(1) {
-  background-image: url('/Img/astrobot.jpeg');
+  background-image: url('')
 }
 
 .categoria ul li:nth-child(2) {
-  background-image: url('/Img/balatro.png');
+background-image: url('Img\astrobot.jpeg');
 }
 
 .categoria ul li:nth-child(3) {
-  background-image: url('/Img/wukong.png');
+  background-image: url('./Img/wukong.png');
 }
 
 .categoria ul li:nth-child(4) {
-  background-image: url('/Img/eldenRing.png');
+  background-image: url('./Img/eldenRing.png');
 }
 
 .categoria ul li:nth-child(5) {
-  background-image: url('/Img/FFVII.png');
+  background-image: url('./Img/FFVII.png');
 }
 
 .categoria ul li:nth-child(6) {
-  background-image: url('/Img/metaphor.png');
+  background-image: url('./Img/metaphor.png');
 }
 
 .console-images {
@@ -525,4 +577,3 @@ nav a:hover {
   /* Zoom leve no hover */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
-
