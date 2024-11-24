@@ -63,7 +63,7 @@ function trocaLuz(){
         root.style.setProperty('--primary-color', '#ff6347');
         root.style.setProperty('--primary-color-light', '#444');
         root.style.setProperty('--togle-color', '#555');
-        root.style.setProperty('--text-color', '#ccc');
+        root.style.setProperty('--text-color', '#fff');
         textoModo.textContent = "Modo claro";
         iconeModo.src = "./Img/light-mode.png";
     }

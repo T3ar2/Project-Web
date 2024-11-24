@@ -90,6 +90,9 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
+.user-info{
+  color: var(--text-color);
+}
 
 .sidebar .text {
   font-size: 16px;
