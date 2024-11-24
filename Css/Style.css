@@ -579,11 +579,13 @@ nav a:hover {
   font-size: 2rem;
   color: #333;
   margin-bottom: 10px; 
+  padding-top: 20%;
 }
 
 .news-content p {
   font-size: 1rem;
   color: #666;
+  padding-top: 5%;
 }
 
 .other-news {
