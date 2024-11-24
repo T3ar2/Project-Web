@@ -288,7 +288,7 @@ header .image-text .header-text {
   gap: 10px;
 }
 
-/* STYLE CONTAINERS */
+
 .scroll-container {
   scroll-snap-type: y mandatory;
   /* Define o encaixe vertical obrigatório */
@@ -390,9 +390,9 @@ nav a:hover {
 }
 
 .noticia {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   height: 500px;
   background-color: #f9f9f9;
   /* Cor de fundo leve */
