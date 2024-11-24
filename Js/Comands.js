@@ -47,7 +47,7 @@ function moverMenu(){
         textoXbox.textContent = "Xbox";
         textoNintendo.textContent = "Nintendo";
         textoPc.textContent = "Pc";
-        textoEventos.textContent = "Eventos / Redes Sociais";
+        textoEventos.textContent = "Eventos";
         textoLogo.textContent = "Game Área";
         textoSubLogo.textContent = "The best of gaming";
         textoModo.textContent = " ";
