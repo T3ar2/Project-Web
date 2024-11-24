@@ -21,18 +21,32 @@ const textoModo = document.getElementById("textoModoLuz");
 
 botaoEscondeMenu.addEventListener("click", moverMenu)
 
-function moverMenu(){
-    sidebar.classList.toggle("escondido");
-    textoHome.textContent = "";
-    textoPlaystation.textContent = " ";
-    textoXbox.textContent = " ";
-    textoNintendo.textContent = " ";
-    textoPc.textContent = " ";
-    textoEventos.textContent = " ";
-    textoLogo.textContent = " ";
-    textoSubLogo.textContent = " ";
-    textoModo.textContent = " ";
-};
+function moverMenu() {
+    const isHidden = sidebar.classList.toggle("escondido");
+
+    textoHome.textContent = isHidden ? "" : "Home";
+    textoPlaystation.textContent = isHidden ? "" : "Playstation";
+    textoXbox.textContent = isHidden ? "" : "Xbox";
+    textoNintendo.textContent = isHidden ? "" : "Nintendo";
+    textoPc.textContent = isHidden ? "" : "Pc";
+    textoEventos.textContent = isHidden ? "" : "Eventos / Redes Sociais";
+    textoLogo.textContent = isHidden ? "" : "Game Área";
+    textoSubLogo.textContent = isHidden ? "" : "The best of gaming";
+    textoModo.textContent = isHidden ? "" : (modoAtual === "claro" ? "Modo escuro" : "Modo claro");
+}
+
+// function moverMenu(){
+//     sidebar.classList.toggle("escondido");
+//     textoHome.textContent = "";
+//     textoPlaystation.textContent = " ";
+//     textoXbox.textContent = " ";
+//     textoNintendo.textContent = " ";
+//     textoPc.textContent = " ";
+//     textoEventos.textContent = " ";
+//     textoLogo.textContent = " ";
+//     textoSubLogo.textContent = " ";
+//     textoModo.textContent = " ";
+// };
 
 const botaoLightDark = document.querySelector(".light-dark");
 // const textoModo = document.querySelector("#textoModoLuz");
