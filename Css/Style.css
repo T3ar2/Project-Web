@@ -504,15 +504,15 @@ nav a:hover {
 }
 
 
-/* AWARDS STYLE  */
 #game-awards {
-  background-image: url(/Img/Background/goty-20243A-confira-os-indicados-ao-premio-de-melhor-jogo-do-ano.webp) ;
-  background-size: auto;
-  padding: 20px;
+  background-image: url(/Img/Background/goty-20243A-confira-os-indicados-ao-premio-de-melhor-jogo-do-ano.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
 
 #game-awards h1 {
