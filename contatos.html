@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div id="botaoToggle">
-            <i class='toggle' id="toggle"><img src="./Img/right-arrow dark.png" class="img-toggle" alt=""></i>
+                <i class='toggle' id="toggle"><img src="./Img/right-arrow dark.png" class="img-toggle" alt=""></i>
             </div>
 
         </header>
@@ -31,7 +31,7 @@
                 <lu class="menu-links">
                     <li class="nav-link">
                         <a href="Index.html">
-                            <i ><img src="./Img/home dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/home dark.png" class="images icons" alt=""></i>
                             <span class="text nav-text">Home</span>
                         </a>
                     </li>
@@ -40,14 +40,14 @@
                     <lu class="menu-links">
                         <li class="nav-bar">
                             <a href="./playstation.html">
-                                <i ><img src="./Img/playstation-logo dark.png" class="images icons" alt=""></i>
+                                <i><img src="./Img/playstation-logo dark.png" class="images icons" alt=""></i>
                                 <span class="text nav-text">Playstation</span>
                             </a>
                         </li>
                     </lu>
                     <li class="nav-bar">
                         <a href="./xbox.html">
-                            <i ><img src="./Img/xbox-logo dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/xbox-logo dark.png" class="images icons" alt=""></i>
                             <span class="text nav-text">Xbox</span>
                         </a>
                     </li>
@@ -55,7 +55,7 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./nintendo.html">
-                            <i ><img src="./Img/nintendo-switch dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/nintendo-switch dark.png" class="images icons" alt=""></i>
                             <span class="text nav-text">Nintendo</span>
                         </a>
                     </li>
@@ -63,7 +63,7 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./pc.html">
-                            <i ><img src="./Img/computer dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/computer dark.png" class="images icons" alt=""></i>
                             <span class="text nav-text">Pc</span>
                         </a>
                     </li>
@@ -71,7 +71,7 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./contatos.html">
-                            <i ><img src="./Img/event dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/event dark.png" class="images icons" alt=""></i>
                             <span class="text nav-text">Eventos</span>
                         </a>
                     </li>
@@ -79,12 +79,12 @@
 
             </div>
             <li class="mode">
-                <li class="light-dark">
-                    <a href="#">
-                        <i><img src="./Img/dark_mode.png" class="images icons" id="iconModoLuz" alt=""></i>
-                        <span class="text nav-text" id="textoModoLuz">Modo escuro</span>
-                    </a>
-                </li>
+            <li class="light-dark">
+                <a href="#">
+                    <i><img src="./Img/dark_mode.png" class="images icons" id="iconModoLuz" alt=""></i>
+                    <span class="text nav-text" id="textoModoLuz">Modo escuro</span>
+                </a>
+            </li>
             </li>
         </div>
         </div>
@@ -97,22 +97,69 @@
         <div class="menu-icon"></div>
         <input type="texto" placeholder="Pesquise...">
         <div class="user-info">
-          <span>Login</span>
+            <span>Login</span>
         </div>
-      </div>
+    </div>
 
 
     <div class="scroll-container">
         <section class="scroll-section" id="welcome-section">
             <h1>CONTATO</h1>
             <div class="console-images">
-                <a href="./contatos.html"  >
+                <a href="./contatos.html">
                     <i><img src="./Img/Home/Eventos Home.png" class="images icons" alt=""></i>
                 </a>
             </div>
+            <div class="login-section">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <input type="email" name="login-email" placeholder="E-mail" required>
+                    <input type="password" name="login-password" placeholder="Senha" required>
+                    <button type="submit" class="btn-login">Entrar</button>
+                </form>
+            </div>
             <h1>⤋</h1>
         </section>
+        <section class="scroll-section">
+            <div class="container">
+                <h1 style="margin-bottom: 5px;">Contato</h1>
+                <div class="form-wrapper">
+                    <!-- Formulário de Contato -->
+                    <div class="form-section">
+                        <h2>Formulário de Contato</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" placeholder="Digite seu nome completo"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reason">Motivo do Contato</label>
+                                <select id="reason" name="reason" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="suporte">Suporte Técnico</option>
+                                    <option value="vendas">Vendas</option>
+                                    <option value="reclamacoes">Reclamações</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar</button>
+                        </form>
+                    </div>
 
+
+
+                </div>
+            </div>
+        </section>
         <section class="scroll-section">
             <footer class="footer">
                 <div class="footer-section">
@@ -162,7 +209,7 @@
         </section>
 
         <section class="scroll-section">
-            
+
         </section>
     </div>
 

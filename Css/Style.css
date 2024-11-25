@@ -647,3 +647,166 @@ nav a:hover {
 .footer-section ul li a:hover {
   color: #00bcd4;
 }
+
+/* STYLE CONTATOS */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Estilo do formulário */
+.form-section {
+  background: #fff;
+  height: 650px;
+  width: 1000px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-group .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group .checkbox-group input {
+  width: auto;
+}
+
+.form-group .checkbox-group label {
+  font-weight: 400;
+}
+
+.btn-submit {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+/* Seção de login */
+.login-section {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-section input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+#melhores-jogos {
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+#melhores-jogos h2{
+  display: flex;
+
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f5c518;
+  /* Cor dourada */
+  text-transform: uppercase;
+  border-bottom: 2px solid #f5c518;
+  display: inline-block
+}
+#melhores-jogos h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#melhores-jogos h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#melhores-jogos ol,
+#melhores-jogos ul,
+#melhores-jogos dl {
+  margin-left: 40px;
+  font-size: 1rem;
+  color: #333;
+}
+
+#melhores-jogos dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#melhores-jogos dd {
+  margin-left: 20px;
+  font-style: italic;
+  color: #555;
+}
