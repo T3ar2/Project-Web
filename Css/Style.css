@@ -725,13 +725,20 @@ nav a:hover {
 }
 
 /* STYLE CONTATOS */
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 30px;
+.contatos h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #f5c518;
+    /* Cor dourada */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
-
+.contatos h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #f5c518;
+  /* Cor dourada */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
 /* Estilo do formulário */
 .form-section {
   background: #fff;
