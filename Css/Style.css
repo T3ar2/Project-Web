@@ -571,15 +571,16 @@ nav a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.console-images {
+.console-images1 {
   display: flex;  
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: -200px;
    /* Permite ajustar se a tela for menor */
 }
 
-.console-images img {
+.console-images1 img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -590,13 +591,34 @@ nav a:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.console-images img:hover {
-  transform: scale(1.1);
+.console-images2 {
+  display: flex;  
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:-140px
+}
+/* icone dos consoles no topo das páginas */
+.console-images2 img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 150px;
+}
+.console-images1 img:hover {
+  transform: scale(1.05);
   /* Zoom leve no hover */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
-
+.console-images2 img:hover {
+  transform: scale(1.05);
+  /* Zoom leve no hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
  /*Conteudo das plataformas*/
 .main-news {
   display: flex;
@@ -698,6 +720,28 @@ nav a:hover {
 
 .footer-section ul li a:hover {
   color: #00bcd4;
+}
+.video-container {
+  text-align: center; /* Center the title and video */
+  margin: 20px;
+  padding-bottom: 80px;
+}
+.video-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+iframe {
+  border: none; /* Optional: removes border around video */
+}
+
+.scroll-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  margin: 5px 0;
+  max-width: 800px;
 }
 
 #PCsection1{
