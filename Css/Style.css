@@ -16,12 +16,12 @@ HTML:
 /* VAR PARA TO DAS AS CORES  */
 
 :root {
-  --body-color: #2a475e;
-  --sidebar-color: #1b2838;
-  --primary-color: #66c0f4;
+  --body-color: #e5e5e5;
+  --sidebar-color: #e5e5e5;
+  --primary-color: #ffffff;
   --primary-color-light: #f6f5f6;
   --togle-color: white;
-  --text-color: #c7d5e0;
+  --text-color: #0d0c0c;
 
   --trans-02: all 0.2s ease;
   --trans-03: all 0.3s ease;
@@ -428,6 +428,10 @@ nav a:hover {
 }
 
 /* PRIMEIRA SESSAO STYLE  */
+
+#noticiaSection{
+
+}
 
 .noticias-header {
   text-align: center;
