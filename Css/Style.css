@@ -13,6 +13,21 @@ HTML:
   </ul>
 </div> */
 
+/* VAR PARA TO DAS AS CORES  */
+
+:root {
+  --body-color: #2a475e;
+  --sidebar-color: #1b2838;
+  --primary-color: #66c0f4;
+  --primary-color-light: #f6f5f6;
+  --togle-color: white;
+  --text-color: #c7d5e0;
+
+  --trans-02: all 0.2s ease;
+  --trans-03: all 0.3s ease;
+  --trans-04: all 0.4s ease;
+  --trans-05: all 0.5s ease;
+}
 
 /* CSS MENU LATERAL: */
 
@@ -69,19 +84,6 @@ HTML:
   text-decoration: none;
 }
 
-:root {
-  --body-color: #e4e9f7;
-  --sidebar-color: #fff;
-  --primary-color: #695cfe;
-  --primary-color-light: #f6f5f6;
-  --togle-color: #ddd;
-  --text-color: #707070;
-
-  --trans-02: all 0.2s ease;
-  --trans-03: all 0.3s ease;
-  --trans-04: all 0.4s ease;
-  --trans-05: all 0.5s ease;
-}
 
 body {
   height: 100vh;
@@ -196,11 +198,17 @@ header .image-text .header-text {
   align-items: center;
   text-decoration: none;
   transition: var(--trans-04);
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar li a:hover {
   background: var(--primary-color);
-  border-radius: 6px;
+  border-radius: 5px;
+}
+.active{
+  background: var(--primary-color);
+  border-radius: 5px;
 }
 
 .sidebar li a:hover .text,
@@ -346,7 +354,7 @@ nav a:hover {
 
 /* HOME STYLE  */
 #welcome-section {
-  background-image: url(/Img/Background/);
+  background-color: #c7d5e0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -356,6 +364,42 @@ nav a:hover {
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
+#welcome-section1 {
+  background-image: url(/Img/Background/giphy.gif);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
+#welcome-section2 {
+  background-image: url(/Img/Background/Playstation5.webp);
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
+
+#welcome-section3{
+  background-color: #171a21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
+
 
 #welcome-section h1 {
   font-size: 4rem;
@@ -443,6 +487,8 @@ nav a:hover {
 
 /* AWARDS STYLE  */
 #game-awards {
+  background-image: url(/Img/Background/goty-20243A-confira-os-indicados-ao-premio-de-melhor-jogo-do-ano.webp) ;
+  background-size: auto;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
@@ -654,25 +700,26 @@ nav a:hover {
   color: #00bcd4;
 }
 
-.video-container {
-  text-align: center; /* Center the title and video */
-  margin: 20px;
-  padding-bottom: 80px;
-}
-.video-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-iframe {
-  border: none; /* Optional: removes border around video */
+#PCsection1{
+  display: flex;
+  background-color: #ccc;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
 }
 
-.scroll-container p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #555;
-  margin: 5px 0;
-  max-width: 800px;
+#nintendo{
+  background-color: #dd2020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+  ;
 }
