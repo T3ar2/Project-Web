@@ -346,6 +346,7 @@ nav a:hover {
 
 /* HOME STYLE  */
 #welcome-section {
+  background-image: url(/Img/Background/Background.webp);
   display: flex;
   flex-direction: column;
   align-items: center;
