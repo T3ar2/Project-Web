@@ -375,8 +375,9 @@ nav a:hover {
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
-/* #welcome-section2 {
-
+#welcome-section2 {
+  background-image: url(/Img/Background/Playstation5.webp);
+  background-size: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -385,7 +386,8 @@ nav a:hover {
   /* Ocupa toda a altura da tela */
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
-} */
+}
+
 #welcome-section3{
   background-color: #171a21;
   display: flex;
@@ -492,18 +494,6 @@ nav a:hover {
   margin: 0 auto;
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
-}
-#Playstation {
-  background-image: url(/Img/Background/) ;
-  display: flex;
-
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #f5c518;
-  /* Cor dourada */
-  text-transform: uppercase;
-  border-bottom: 2px solid #f5c518;
-  display: inline-block
 }
 
 #game-awards h1 {
