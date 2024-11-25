@@ -307,7 +307,7 @@ header .image-text .header-text {
   /* Evita que a barra superior sobreponha o conteúdo */
 }
 
-.scroll-section {
+.scroll-sectionGoty {
   scroll-snap-align: start;
   /* Faz o topo da seção "encaixar" */
   height: 100vh;
@@ -318,6 +318,24 @@ header .image-text .header-text {
   font-size: 2rem;
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.scroll-section {
+  scroll-snap-align: start; /* Keeps your original snapping functionality */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.scroll-section h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px; /* Space between title and news grid */
+  text-align: center; /* Center the text */
 }
 
 section {
@@ -430,7 +448,8 @@ nav a:hover {
   max-width: 1200px;
   /* Limita a largura máxima para telas grandes */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 20px;
+  width: 100%;
 }
 
 .noticia {
