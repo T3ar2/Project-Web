@@ -169,7 +169,7 @@ HTML:
     transform: translateY(-50%);
     height: 25px;
     width: 25px;
-    background: var(--primary-color);
+    background: var(--body-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,6 +312,7 @@ HTML:
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   }
+  
   
   section {
     height: 100vh;
