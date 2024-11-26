@@ -110,7 +110,7 @@ function moverMenu(){
         textoNintendo.textContent = "Nintendo";
         textoPc.textContent = "Pc";
         textoEventos.textContent = "Eventos";
-        textoLogo.textContent = "Game Área";
+        textoLogo.textContent = "Good Game";
         textoSubLogo.textContent = "The best of gaming";
         if(modoAtual == "claro"){
             textoModo.textContent = "Modo Escuro";
