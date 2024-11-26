@@ -10,11 +10,12 @@
 </head>
 
 <body>
+    <!-- Começo do menu lateral -->
     <nav class="sidebar">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="./Img/LOGOgg.png" alt="">
+                    <img src="./Img/LOGOgg.png" id="imglogo" alt="">
                 </span>
                 <div class="text header-text">
                     <span class="name" id="textoLogo">Good Game</span>
@@ -30,8 +31,8 @@
             <div class="menu">
                 <lu class="menu-links">
                     <li class="nav-link">
-                        <a href="Index.html">
-                            <i><img src="./Img/home dark.png" class="images icons" alt=""></i>
+                        <a href="Index.html" >
+                            <i><img src="./Img/home dark.png" id="imghome" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoHome">Home</span>
                         </a>
                     </li>
@@ -40,7 +41,7 @@
                     <lu class="menu-links">
                         <li class="nav-bar">
                             <a href="./playstation.html">
-                                <i><img src="./Img/playstation-logo dark.png" class="images icons" alt=""></i>
+                                <i><img src="./Img/playstation-logo dark.png" id="imgps" class="images icons" alt=""></i>
                                 <span class="text nav-text" id="textoPlaystation">Playstation</span>
                             </a>
                         </li>
@@ -48,7 +49,7 @@
                 <lu class="menu-links">
                     <li class ="nav-bar">
                         <a href="./xbox.html">
-                            <i><img src="./Img/xbox-logo dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/xbox-logo dark.png" id="imgxbox" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoXbox">Xbox</span>
                         </a>
                     </li>
@@ -56,7 +57,7 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./nintendo.html">
-                            <i><img src="./Img/nintendo-switch dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/nintendo-switch dark.png" id="imgnintendo" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoNintendo">Nintendo</span>
                         </a>
                     </li>
@@ -64,69 +65,74 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./pc.html">
-                            <i><img src="./Img/computer dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/computer dark.png" id="imgpc" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoPc">Pc</span>
                         </a>
                     </li>
                 </lu>
                 <lu class="menu-links">
                     <li class="nav-bar">
-                        <a href="./contatos.html" class="active">
-                            <i><img src="./Img/event dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text" id="textoEventos">Eventos</span>
+                        <a href="./contatos.html"  class="active">
+                            <i><img src="./Img/event dark.png" id="imgeventos" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoEventos">Contato</span>
                         </a>
                     </li>
                 </lu>
 
+
+
             </div>
-            <li class="mode">
+            <lu class="menu-links">
                 <li class="light-dark">
                     <a href="#">
                         <i><img src="./Img/dark_mode.png" class="images icons" id="iconModoLuz" alt=""></i>
                         <span class="text nav-text" id="textoModoLuz">Modo escuro</span>
                     </a>
                 </li>
-            </li>
+            </lu>
         </div>
         </div>
     </nav>
-
-    <!-- BODY -->
-
+ 
+   <!-- Menu do topo -->
+    <header>
     <div class="top-bar">
         <div class="menu-icon"></div>
         <input type="texto" placeholder="Pesquise...">
-        <div class="user-info">
-            <span>Login</span>
-        </div>
+        <a href="./contatos.html">
+            <div class="user-info">
+                <span id="usuario-login">Login</span>
+            </div>
+        </a>
     </div>
+    </header>
 
-
-    <div class="scroll-container">
-        <section class="scroll-section">
+    <!-- BODY -->
+    <div class="scroll-container" style="background-color: rgb(146, 168, 209);">
+        <section class="scroll-section" id="welcome-section">
             <h1>CONTATO</h1>
             <div class="console-images2">
-                <a href="./contatos.html"  >
+                <a href="./contatos.html">
                     <i><img src="./Img/Home/Eventos Home.png" class="images icons" alt=""></i>
                 </a>
             </div>
             <div class="login-section">
                 <h2>Login</h2>
-                <form action="#" method="POST">
-                    <input type="email" name="login-email" placeholder="E-mail" required>
-                    <input type="password" name="login-password" placeholder="Senha" required>
-                    <button type="submit" class="btn-login">Entrar</button>
+                <form>
+                    <input type="email" name="login-email" id="login-email" placeholder="E-mail" required>
+                    <input type="password" name="login-password" id="login-password" placeholder="Senha" required>
+                    <button type="submit" class="btn-login" id="botaoLogin">Entrar</button>
                 </form>
             </div>
             <h1>⤋</h1>
         </section>
-        <section class="scroll-section" id="contatos">
+        <section class="scroll-section" id="contatos" style="background-color: rgb(146, 168, 209);">
             <div class="container">
                 <h1 style="margin-bottom: 5px;">Formulário de Contato</h1>
                 <div class="form-wrapper">
                     <!-- Formulário de Contato -->
                     <div class="form-section">
-                        <form action="#" method="POST">
+                        <form>
                             <div class="form-group">
                                 <label for="name">Nome Completo</label>
                                 <input type="text" id="name" name="name" placeholder="Digite seu nome completo"
@@ -150,51 +156,95 @@
                                 <label for="message">Mensagem</label>
                                 <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
                             </div>
-                            <button type="submit" class="btn-submit">Enviar</button>
+                            <button type="submit" class="btn-submit" id="enviarContato">Enviar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="scroll-section" id="membership" style="background-color: rgb(146, 168, 209);">
+            <div class="categoria">
+                <h2>Membership Pago - GoodGame</h2>
 
-        <section class="scroll-section">
-            <footer class="footer">
-                <div class="footer-section">
-                    <h3>SOBRE NÓS</h3>
-                    <ul>
-                        <li><a href="#">O que é a Good Game?</a></li>
-                        <li><a href="#">Parcerias</a></li>
-                        <li><a href="#">Colaboradores</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>REVIEWS</h3>
-                    <ul>
-                        <li><a href="#">Últimas reviews</a></li>
-                        <li><a href="#">PC</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">Playstation</a></li>
-                        <li><a href="#">Nintendo</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>NEWSROOM</h3>
-                    <ul>
-                        <li><a href="#">Mais recentes</a></li>
-                        <li><a href="#">Em alta</a></li>
-                        <li><a href="#">Entrevistas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>SOCIAIS</h3>
-                    <ul>
-                        <li><a href="https://www.instagram.com/good.game.br/">Instagram</a></li>
-                        <li><a href="https://www.youtube.com/@IGN">YouTube</a></li>
-                        <li><a href="https://www.facebook.com/FacebookGaming/">Facebook</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </section>
+                <!-- Tabela -->
+                <h3>Planos de Assinatura</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Plano</strong></th>
+                            <th><strong>Preço Mensal</strong></th>
+                            <th><strong>Benefícios</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basic</strong></td>
+                            <td><span style="color: green; font-weight: bold;">R$ 19,90</span></td>
+                            <td id="membership-table">
+                                <ul>
+                                    <li><em>Acesso a notícias exclusivas</em></li>
+                                    <li><em>Descontos em eventos</em></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pro</strong></td>
+                            <td><span style="color: orange; font-weight: bold;">R$ 39,90</span></td>
+                            <td id="membership-table">
+                                <ul>
+                                    <li><em>Inclui benefícios do plano Basic</em></li>
+                                    <li><em>Participação em sorteios</em></li>
+                                    <li><em>Acesso a reviews antecipadas</em></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            <!-- Texto Destacado -->
+            <h2>Destaques</h2>
+            <p><mark>Garanta agora mesmo o seu plano e aproveite conteúdos exclusivos.</mark></p>
+            <p class="hover-highlight">Passe o mouse aqui para ver como é fácil assinar um dos planos!</p>
+    </div>
+    </section>
+    <section class="scroll-section" id="welcome-section3">
+        <footer class="footer">
+            <div class="footer-section">
+                <h3>SOBRE NÓS</h3>
+                <ul>
+                    <li><a href="#">O que é a Good Game?</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="#">Colaboradores</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>REVIEWS</h3>
+                <ul>
+                    <li><a href="#">Últimas reviews</a></li>
+                    <li><a href="#">PC</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Playstation</a></li>
+                    <li><a href="#">Nintendo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>NEWSROOM</h3>
+                <ul>
+                    <li><a href="#">Mais recentes</a></li>
+                    <li><a href="#">Em alta</a></li>
+                    <li><a href="#">Entrevistas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SOCIAIS</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/good.game.br/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@IGN">YouTube</a></li>
+                    <li><a href="https://www.facebook.com/FacebookGaming/">Facebook</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
     </div>
 
     <script src="Js/Comands.js"></script>

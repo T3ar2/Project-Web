@@ -14,7 +14,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="./Img/LOGOgg.png" alt="">
+                    <img src="./Img/LOGOgg.png" id="imglogo" alt="">
                 </span>
                 <div class="text header-text">
                     <span class="name" id="textoLogo">Good Game</span>
@@ -31,7 +31,7 @@
                 <lu class="menu-links">
                     <li class="nav-link">
                         <a href="Index.html" class="active">
-                            <i><img src="./Img/home dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/home dark.png" id="imghome" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoHome">Home</span>
                         </a>
                     </li>
@@ -40,14 +40,14 @@
                     <lu class="menu-links">
                         <li class="nav-bar">
                             <a href="./playstation.html">
-                                <i><img src="./Img/playstation-logo dark.png" class="images icons" alt=""></i>
+                                <i><img src="./Img/playstation-logo dark.png" id="imgps" class="images icons" alt=""></i>
                                 <span class="text nav-text" id="textoPlaystation">Playstation</span>
                             </a>
                         </li>
                     </lu>
                     <li class="nav-bar">
                         <a href="./xbox.html">
-                            <i><img src="./Img/xbox-logo dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/xbox-logo dark.png" id="imgxbox" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoXbox">Xbox</span>
                         </a>
                     </li>
@@ -55,7 +55,7 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./nintendo.html">
-                            <i><img src="./Img/nintendo-switch dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/nintendo-switch dark.png" id="imgnintendo" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoNintendo">Nintendo</span>
                         </a>
                     </li>
@@ -63,7 +63,7 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./pc.html">
-                            <i><img src="./Img/computer dark.png" class="images icons" alt=""></i>
+                            <i><img src="./Img/computer dark.png" id="imgpc" class="images icons" alt=""></i>
                             <span class="text nav-text" id="textoPc">Pc</span>
                         </a>
                     </li>
@@ -71,8 +71,8 @@
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./contatos.html">
-                            <i><img src="./Img/event dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text" id="textoEventos">Eventos</span>
+                            <i><img src="./Img/event dark.png" id="imgeventos" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoEventos">Contato</span>
                         </a>
                     </li>
                 </lu>
@@ -92,18 +92,21 @@
         </div>
     </nav>
     
+        <!-- Menu do topo -->
+        <div class="top-bar">
+            <div class="menu-icon"></div>
+                <input type="texto" placeholder="Pesquise...">
+                <a href="#noticiaSection" class="user-info" >
+                    <span>Notícias</span>
+                </a>
+            <a href="./contatos.html">
+                <div class="user-info">
+                    <span id="usuario-login">Login</span>
+                </div>
+            </a>
+        </div>
 
     <!-- BODY -->
-    <div class="top-bar">
-
-        <div class="menu-icon"></div>
-        <input type="texto" placeholder="Pesquise...">
-        <div class="user-info" id="poplogin">
-            <span>Login</span>
-        </div>
-    </div>
-
-    
 
     <div class="scroll-container">
         <section class="scroll-section" id="welcome-section1" style="  background-image: url(./Img/Background/giphy.gif);
@@ -223,8 +226,6 @@
         </section>
         <section class="scroll-section" id="melhores-jogos">
             <div class="categoria">
-                <h1>Melhores Jogos de Todos os Tempos</h1>
-
                 <!-- Lista Ordenada -->
                 <h2>Top 5 Jogos Mais Vendidos</h2>
                 <ol>
@@ -245,7 +246,6 @@
                     <dt>Elden Ring</dt>
                     <dd>Um RPG de fantasia com combate desafiador e exploração rica.</dd>
                 </dl>
-
                 <!-- Lista Numerada -->
                 <h2>Prêmios GOTY Recentes</h2>
                 <ul>
