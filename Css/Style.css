@@ -327,7 +327,7 @@ header .image-text .header-text {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center the content horizontally */
   padding: 20px;
-  color: white;
+  color: var(--body-color);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 .scroll-section h1 {
@@ -372,7 +372,6 @@ nav a:hover {
 
 /* HOME STYLE  */
 #welcome-section {
-  background-color: #c7d5e0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -428,10 +427,6 @@ nav a:hover {
 }
 
 /* PRIMEIRA SESSAO STYLE  */
-
-#noticiaSection{
-
-}
 
 .noticias-header {
   text-align: center;
@@ -538,8 +533,6 @@ nav a:hover {
 .categoria h2 {
   font-size: 1.8em;
   margin-bottom: 15px;
-  color: #e63946;
-  /* Cor de destaque */
   text-transform: uppercase;
 }
 
@@ -665,7 +658,7 @@ nav a:hover {
 
 .news-content h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 10px; 
   padding-top: 20%;
 }
@@ -923,7 +916,6 @@ iframe {
 }
 #melhores-jogos h2{
   display: flex;
-
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #f5c518;
@@ -936,11 +928,13 @@ iframe {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
+  color: #f5c518;
 }
 
 #melhores-jogos h2 {
   font-size: 1.5rem;
   margin-top: 20px;
+  color: var(--text-color)
 }
 
 #melhores-jogos ol,
@@ -960,4 +954,74 @@ iframe {
   margin-left: 20px;
   font-style: italic;
   color: #555;
+}
+
+/* Estilo geral da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+table th, table td {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* Estilo para listas */
+ul, ol {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+#membership-table ul li {
+  margin: 5px 0;
+  font-size: 1rem;
+  width: 200px;
+  height: 50px;
+  display:  flex;
+  text-align: center;
+}
+
+#membership-table ol li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Texto destacado */
+mark {
+  background-color: yellow;
+  padding: 3px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Texto com hover */
+.hover-highlight {
+  color: #555;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 5px;
+}
+
+.hover-highlight:hover {
+  background-color: #0077cc;
+  color: #fff;
+  cursor: pointer;
 }
