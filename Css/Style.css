@@ -376,7 +376,6 @@ nav a:hover {
   background: var(--body-color);
 }
 #welcome-section-home {
-  background-image: url(/Img/Background/giphy.gif);
   display: flex;
   flex-direction: column;
   align-items: center;
