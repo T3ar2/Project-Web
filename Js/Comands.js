@@ -88,3 +88,4 @@ function trocaLuz(){
     }
 };
 // >>>>>>> 0192e865e1e1b1eb83c004e21d7af1977f11d38e
+
