@@ -123,7 +123,7 @@ function moverMenu(){
     
 };
 
-//variávewis de captura para login
+//variáveis de captura para login
 const botaoLogin = document.getElementById("botaoLogin");
 const emailLogin = document.getElementById("login-email");
 const passwordLogin = document.getElementById("login-password");
