@@ -1,17 +1,4 @@
-/* Erick!
 
-Para fazer o menu lateral aparecer apenas quando você clicar na setinha, você pode usar o seguinte código HTML, CSS e JavaScript:
-
-HTML:
-
-<div class="menu-lateral">
-  <button class="botao-setinha" id="botao-setinha">
-    <i class="fas fa-bars"></i>
-  </button>
-  <ul class="lista-menu">
-    <!-- itens do menu -->
-  </ul>
-</div> */
 
 /* VAR PARA TO DAS AS CORES  */
 
@@ -299,23 +286,6 @@ header .image-text .header-text {
   gap: 10px;
 }
 
-#popUpLogin {
-  position: fixed; 
-  margin: 45px 10px 0 0;
-  top: 0;         
-  right: 0;        
-  width: 20%;      
-  height: 20%;     
-  background-color: rgba(0, 0, 0, 0.8); 
-  color: white;   
-  display: flex;   
-  align-items: center; 
-  justify-content: center; 
-  border-radius: 8px; 
-}
-.popUpMostrar{
-  top: -250px;
-}
 .scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -362,6 +332,10 @@ section {
 a {
   text-decoration: none;
   color: white;
+}
+
+.user-info:hover{
+  transform: scale(1.15);
 }
 
 nav {

@@ -14,11 +14,11 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="./Img/logogg.png" alt="">
+                    <img src="./Img/LOGOgg.png" id="imglogo" alt="">
                 </span>
                 <div class="text header-text">
-                    <span class="name">Good Game</span>
-                    <span class="Second-name">The best of gaming</span>
+                    <span class="name" id="textoLogo">Good Game</span>
+                    <span class="Second-name" id="textoSubLogo">The best of gaming</span>
                 </div>
             </div>
             <div id="botaoToggle">
@@ -30,9 +30,9 @@
             <div class="menu">
                 <lu class="menu-links">
                     <li class="nav-link">
-                        <a href="Index.html">
-                            <i><img src="./Img/home dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text">Home</span>
+                        <a href="Index.html" class="active">
+                            <i><img src="./Img/home dark.png" id="imghome" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoHome">Home</span>
                         </a>
                     </li>
                 </lu>
@@ -40,52 +40,54 @@
                     <lu class="menu-links">
                         <li class="nav-bar">
                             <a href="./playstation.html">
-                                <i><img src="./Img/playstation-logo dark.png" class="images icons" alt=""></i>
-                                <span class="text nav-text">Playstation</span>
+                                <i><img src="./Img/playstation-logo dark.png" id="imgps" class="images icons" alt=""></i>
+                                <span class="text nav-text" id="textoPlaystation">Playstation</span>
                             </a>
                         </li>
                     </lu>
                     <li class="nav-bar">
                         <a href="./xbox.html">
-                            <i><img src="./Img/xbox-logo dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text">Xbox</span>
+                            <i><img src="./Img/xbox-logo dark.png" id="imgxbox" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoXbox">Xbox</span>
                         </a>
                     </li>
                 </lu>
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./nintendo.html">
-                            <i><img src="./Img/nintendo-switch dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text">Nintendo</span>
+                            <i><img src="./Img/nintendo-switch dark.png" id="imgnintendo" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoNintendo">Nintendo</span>
                         </a>
                     </li>
                 </lu>
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./pc.html">
-                            <i><img src="./Img/computer dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text">Pc</span>
+                            <i><img src="./Img/computer dark.png" id="imgpc" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoPc">Pc</span>
                         </a>
                     </li>
                 </lu>
                 <lu class="menu-links">
                     <li class="nav-bar">
                         <a href="./contatos.html">
-                            <i><img src="./Img/event dark.png" class="images icons" alt=""></i>
-                            <span class="text nav-text">Eventos</span>
+                            <i><img src="./Img/event dark.png" id="imgeventos" class="images icons" alt=""></i>
+                            <span class="text nav-text" id="textoEventos">Eventos</span>
                         </a>
                     </li>
                 </lu>
 
+
+
             </div>
-            <li class="mode">
-            <li class="light-dark">
-                <a href="#">
-                    <i><img src="./Img/dark_mode.png" class="images icons" id="iconModoLuz" alt=""></i>
-                    <span class="text nav-text" id="textoModoLuz">Modo escuro</span>
-                </a>
-            </li>
-            </li>
+            <lu class="menu-links">
+                <li class="light-dark">
+                    <a href="#">
+                        <i><img src="./Img/dark_mode.png" class="images icons" id="iconModoLuz" alt=""></i>
+                        <span class="text nav-text" id="textoModoLuz">Modo escuro</span>
+                    </a>
+                </li>
+            </lu>
         </div>
         </div>
     </nav>
@@ -95,9 +97,11 @@
     <div class="top-bar">
         <div class="menu-icon"></div>
         <input type="texto" placeholder="Pesquise...">
-        <div class="user-info">
-            <span>Login</span>
-        </div>
+        <a href="./contatos.html">
+            <div class="user-info">
+                <span id="usuario-login">Login</span>
+            </div>
+        </a>
     </div>
 
 
@@ -111,10 +115,10 @@
             </div>
             <div class="login-section">
                 <h2>Login</h2>
-                <form action="#" method="POST">
-                    <input type="email" name="login-email" placeholder="E-mail" required>
-                    <input type="password" name="login-password" placeholder="Senha" required>
-                    <button type="submit" class="btn-login">Entrar</button>
+                <form>
+                    <input type="email" name="login-email" id="login-email" placeholder="E-mail" required>
+                    <input type="password" name="login-password" id="login-password" placeholder="Senha" required>
+                    <button type="submit" class="btn-login" id="botaoLogin">Entrar</button>
                 </form>
             </div>
             <h1>⤋</h1>
@@ -125,7 +129,7 @@
                 <div class="form-wrapper">
                     <!-- Formulário de Contato -->
                     <div class="form-section">
-                        <form action="#" method="POST">
+                        <form>
                             <div class="form-group">
                                 <label for="name">Nome Completo</label>
                                 <input type="text" id="name" name="name" placeholder="Digite seu nome completo"
@@ -149,7 +153,7 @@
                                 <label for="message">Mensagem</label>
                                 <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
                             </div>
-                            <button type="submit" class="btn-submit">Enviar</button>
+                            <button type="submit" class="btn-submit" id="enviarContato">Enviar</button>
                         </form>
                     </div>
                 </div>
