@@ -1,4 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ 
+/* APLICAÇÃO PARA TODO SITE */
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+body {
+  height: 100vh;
+  background: var(--body-color);
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
 /* VAR PARA TO DAS AS CORES  */
 
@@ -59,26 +79,9 @@
 }
 
 
+/* Sidebar */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-* {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-
-body {
-  height: 100vh;
-  background: var(--body-color);
-  scroll-behavior: smooth;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
 .user-info{
   color: var(--text-color);
 }
@@ -381,7 +384,6 @@ nav a:hover {
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
-<<<<<<< Updated upstream
 /* #welcome-section2 {
   background-image: url(/Img/Background/Playstation5.webp);
 =======
