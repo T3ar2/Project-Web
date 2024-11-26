@@ -150,7 +150,8 @@ enviarContato.addEventListener("click", submitContato);
 // funcionamento do contato
 function submitContato(){
     event.preventDefault(); // para impedir que o formulario seja de fato "enviado" pois estava dando reload na pagina
-    alert("Registrada a solicitação de suporte do usuário " + name.value + " com a motivação: " + reason.value + ". Detalhes:\n " + message.value + "\nO contataremos em até 3 dias úteis através do email " + email.value)
+    alert("Registrada a solicitação de suporte do usuário " + name.value + " com a motivação: " + reason.value + ". Detalhes:\n "
+         + message.value + "\nO contataremos em até 3 dias úteis através do email " + email.value)
 }
 
 
