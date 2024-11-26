@@ -381,8 +381,13 @@ nav a:hover {
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
+<<<<<<< Updated upstream
 /* #welcome-section2 {
   background-image: url(/Img/Background/Playstation5.webp);
+=======
+#welcome-section2 {
+  background-image: blue;
+>>>>>>> Stashed changes
   background-size: auto;
   display: flex;
   flex-direction: column;
