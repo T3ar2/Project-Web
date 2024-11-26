@@ -260,7 +260,7 @@ header .image-text .header-text {
 
 /* TOPBAR STYLE */
 .top-bar {
-  /* position: fixed; */
+  /* position:static; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -332,7 +332,6 @@ header .image-text .header-text {
 section {
   height: 100vh;
   padding: 20px;
-  /* border: 1px solid #ccc; */
 }
 
 a {
@@ -349,7 +348,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: #333; */
   padding: 10px;
   text-align: center;
 }
@@ -357,7 +355,6 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-size: 18px;
 }
 
@@ -384,7 +381,6 @@ nav a:hover {
   height: 100vh;
   /* Ocupa toda a altura da tela */
   text-align: center;
-  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
 
 #welcome-section-playstation {
@@ -557,6 +553,7 @@ nav a:hover {
   font-size: 1.8em;
   margin-bottom: 15px;
   text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .categoria ul {
@@ -1024,6 +1021,8 @@ ul, ol {
   height: 50px;
   display:  flex;
   text-align: center;
+  text-shadow: none;
+  color: black;
 }
 
 #membership-table ol li {
@@ -1033,7 +1032,7 @@ ul, ol {
 
 /* Texto destacado */
 mark {
-  background-color: yellow;
+  background-color: #0077cc;
   padding: 3px;
   font-weight: bold;
   color: var(--text-color);
