@@ -29,6 +29,7 @@ body {
   --primary-color-light: #f6f5f6;
   --togle-color: white;
   --text-color: #0d0c0c;
+  --title-color: #e5e5e5;
 
   --trans-02: all 0.2s ease;
   --trans-03: all 0.3s ease;
@@ -372,10 +373,9 @@ nav a:hover {
   height: 100vh;
   /* Ocupa toda a altura da tela */
   text-align: center;
-  background: linear-gradient(135deg, #da301f, #2e2e2e);
-  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+  background: var(--body-color);
 }
-#welcome-section1 {
+#welcome-section-home {
   background-image: url(/Img/Background/giphy.gif);
   display: flex;
   flex-direction: column;
@@ -386,24 +386,19 @@ nav a:hover {
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
-/* #welcome-section2 {
-  background-image: url(/Img/Background/Playstation5.webp);
-=======
-#welcome-section2 {
-  background-image: blue;
->>>>>>> Stashed changes
+
+#welcome-section-playstation {
   background-size: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  /* Ocupa toda a altura da tela */
   text-align: center;
   background: linear-gradient(135deg, #2458f0, #2e2e2e);
-  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
 
-#welcome-section3{
+#welcome-section-xbox{
   background-color: #171a21;
   display: flex;
   flex-direction: column;
@@ -415,7 +410,7 @@ nav a:hover {
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
 
-#welcome-section4{
+#welcome-section-pc{
   background-color: #171a21;
   display: flex;
   flex-direction: column;
@@ -426,6 +421,18 @@ nav a:hover {
   background: linear-gradient(135deg, #01123A, #5b5f6a);
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
+#welcome-section-nintendo{
+  background-color: #171a21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #b32323, #2e2e2e);
+}
+
+/* footer */
 #welcome-section5{
   background-color: #171a21;
   display: flex;
@@ -434,7 +441,7 @@ nav a:hover {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+  background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
 }
 #welcome-section h1 {
   font-size: 4rem;
@@ -674,7 +681,7 @@ nav a:hover {
 
 .news-content h2 {
   font-size: 2rem;
-  color: var(--text-color);
+  color: var(--title-color);
   margin-bottom: 10px; 
   padding-top: 20%;
 }
