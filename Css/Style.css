@@ -700,6 +700,7 @@ nav a:hover {
   
 
   .footer-section h3 {
+    color: white;
     border-bottom: 2px solid gray;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -905,7 +906,9 @@ iframe {
 }
 
 #melhores-jogos {
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
+  margin: 0;
+  padding: 0;
 }
 #melhores-jogos h2{
   display: flex;
@@ -935,7 +938,7 @@ iframe {
 #melhores-jogos dl {
   margin-left: 40px;
   font-size: 1rem;
-  color: #333;
+  color:var(--text-color);
 }
 
 #melhores-jogos dt {
@@ -946,7 +949,7 @@ iframe {
 #melhores-jogos dd {
   margin-left: 20px;
   font-style: italic;
-  color: #555;
+  color: var(--text-color);
 }
 
 /* Estilo geral da tabela */
@@ -1002,12 +1005,12 @@ mark {
   background-color: yellow;
   padding: 3px;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 /* Texto com hover */
 .hover-highlight {
-  color: #555;
+  color: var(--text-color);
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   padding: 5px;
