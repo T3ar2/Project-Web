@@ -976,7 +976,7 @@ iframe {
 
 #melhores-jogos dd {
   margin-left: 20px;
-  font-style: italic;
+  font-style:  "Inter", sans-serif;
   color: var(--text-color);
 }
 
