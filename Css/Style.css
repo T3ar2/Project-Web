@@ -13,6 +13,21 @@ HTML:
   </ul>
 </div> */
 
+/* VAR PARA TO DAS AS CORES  */
+
+:root {
+  --body-color: #e5e5e5;
+  --sidebar-color: #e5e5e5;
+  --primary-color: #ffffff;
+  --primary-color-light: #f6f5f6;
+  --togle-color: white;
+  --text-color: #0d0c0c;
+
+  --trans-02: all 0.2s ease;
+  --trans-03: all 0.3s ease;
+  --trans-04: all 0.4s ease;
+  --trans-05: all 0.5s ease;
+}
 
 /* CSS MENU LATERAL: */
 
@@ -69,19 +84,6 @@ HTML:
   text-decoration: none;
 }
 
-:root {
-  --body-color: #e4e9f7;
-  --sidebar-color: #fff;
-  --primary-color: #695cfe;
-  --primary-color-light: #f6f5f6;
-  --togle-color: #ddd;
-  --text-color: #707070;
-
-  --trans-02: all 0.2s ease;
-  --trans-03: all 0.3s ease;
-  --trans-04: all 0.4s ease;
-  --trans-05: all 0.5s ease;
-}
 
 body {
   height: 100vh;
@@ -196,11 +198,17 @@ header .image-text .header-text {
   align-items: center;
   text-decoration: none;
   transition: var(--trans-04);
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar li a:hover {
   background: var(--primary-color);
-  border-radius: 6px;
+  border-radius: 5px;
+}
+.active{
+  background: var(--primary-color);
+  border-radius: 5px;
 }
 
 .sidebar li a:hover .text,
@@ -315,7 +323,7 @@ header .image-text .header-text {
   padding-top: 60px;
 }
 
-.scroll-section {
+.scroll-sectionGoty {
   scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
@@ -325,6 +333,24 @@ header .image-text .header-text {
   font-size: 2rem;
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.scroll-section {
+  scroll-snap-align: start; /* Keeps your original snapping functionality */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.scroll-section h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px; /* Space between title and news grid */
+  text-align: center; /* Center the text */
 }
 
 section {
@@ -361,6 +387,42 @@ nav a:hover {
 
 /* HOME STYLE  */
 #welcome-section {
+  background-color: #c7d5e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
+#welcome-section1 {
+  background-image: url(/Img/Background/giphy.gif);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
+#welcome-section2 {
+  background-image: url(/Img/Background/Playstation5.webp);
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+}
+
+#welcome-section3{
+  background-color: #171a21;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,6 +431,7 @@ nav a:hover {
   text-align: center;
   /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
+
 
 #welcome-section h1 {
   font-size: 4rem;
@@ -379,6 +442,10 @@ nav a:hover {
 }
 
 /* PRIMEIRA SESSAO STYLE  */
+
+#noticiaSection{
+
+}
 
 .noticias-header {
   text-align: center;
@@ -399,7 +466,8 @@ nav a:hover {
   max-width: 1200px;
   /* Limita a largura máxima para telas grandes */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 20px;
+  width: 100%;
 }
 
 .noticia {
@@ -452,13 +520,15 @@ nav a:hover {
 }
 
 
-/* AWARDS STYLE  */
 #game-awards {
-  padding: 20px;
+  background-image: url(/Img/Background/goty-20243A-confira-os-indicados-ao-premio-de-melhor-jogo-do-ano.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
 }
 
 #game-awards h1 {
@@ -536,15 +606,16 @@ nav a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.console-images {
-  display: flex;
+.console-images1 {
+  display: flex;  
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  /* Permite ajustar se a tela for menor */
+  margin-bottom: -200px;
+   /* Permite ajustar se a tela for menor */
 }
 
-.console-images img {
+.console-images1 img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -552,16 +623,37 @@ nav a:hover {
   border-radius: 10px;
   /* background: #fff; Fundo branco para destacar as imagens */
   padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.console-images img:hover {
-  transform: scale(1.1);
+.console-images2 {
+  display: flex;  
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:-140px
+}
+/* icone dos consoles no topo das páginas */
+.console-images2 img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 150px;
+}
+.console-images1 img:hover {
+  transform: scale(1.05);
   /* Zoom leve no hover */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
-
+.console-images2 img:hover {
+  transform: scale(1.05);
+  /* Zoom leve no hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
  /*Conteudo das plataformas*/
 .main-news {
   display: flex;
@@ -620,7 +712,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 40px;
+    padding: 60px 40px;
     background: url("./Img/ALGUMAIMAGEM.PNG") no-repeat center center;
     background-size: cover;
   }
@@ -628,16 +720,21 @@ nav a:hover {
 
   .footer-section {
     flex: 1;
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 20px; 
+    word-wrap: break-word;
   }
   
 
-.footer-section h3 {
-  border-bottom: 2px solid gray;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  .footer-section h3 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footer-section ul {
@@ -652,10 +749,225 @@ nav a:hover {
 .footer-section ul li a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
   color: #00bcd4;
+}
+.video-container {
+  text-align: center; /* Center the title and video */
+  margin: 20px;
+  padding-bottom: 80px;
+}
+.video-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+iframe {
+  border: none; /* Optional: removes border around video */
+}
+
+.scroll-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  margin: 5px 0;
+  max-width: 800px;
+}
+
+#PCsection1{
+  display: flex;
+  background-color: #ccc;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+}
+
+#nintendo{
+  background-color: #dd2020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+  text-align: center;
+  /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e); */
+  ;
+}
+
+/* STYLE CONTATOS */
+.contatos h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #f5c518;
+    /* Cor dourada */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.contatos h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #f5c518;
+  /* Cor dourada */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+/* Estilo do formulário */
+.form-section {
+  background: #fff;
+  height: 650px;
+  width: 1000px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-group .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group .checkbox-group input {
+  width: auto;
+}
+
+.form-group .checkbox-group label {
+  font-weight: 400;
+}
+
+.btn-submit {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+/* Seção de login */
+.login-section {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-section input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+#melhores-jogos {
+  padding: 40px 20px;
+}
+#melhores-jogos h2{
+  display: flex;
+
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f5c518;
+  /* Cor dourada */
+  text-transform: uppercase;
+  border-bottom: 2px solid #f5c518;
+  display: inline-block
+}
+#melhores-jogos h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#melhores-jogos h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#melhores-jogos ol,
+#melhores-jogos ul,
+#melhores-jogos dl {
+  margin-left: 40px;
+  font-size: 1rem;
+  color: #333;
+}
+
+#melhores-jogos dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#melhores-jogos dd {
+  margin-left: 20px;
+  font-style: italic;
+  color: #555;
 }

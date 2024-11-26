@@ -47,7 +47,7 @@ function moverMenu(){
         textoXbox.textContent = "Xbox";
         textoNintendo.textContent = "Nintendo";
         textoPc.textContent = "Pc";
-        textoEventos.textContent = "Eventos / Redes Sociais";
+        textoEventos.textContent = "Eventos";
         textoLogo.textContent = "Game Área";
         textoSubLogo.textContent = "The best of gaming";
         textoModo.textContent = " ";
@@ -77,12 +77,12 @@ function trocaLuz(){
     }
     else{
         modoAtual = "claro"
-        root.style.setProperty('--body-color', '#e4e9f7');
-        root.style.setProperty('--sidebar-color', '#fff');
-        root.style.setProperty('--primary-color', '#695cfe');
+        root.style.setProperty('--body-color', '#2a475e');
+        root.style.setProperty('--sidebar-color', '#1b2838');
+        root.style.setProperty('--primary-color', '#66c0f4');
         root.style.setProperty('--primary-color-light', '#f6f5f6');
-        root.style.setProperty('--togle-color', '#ddd');
-        root.style.setProperty('--text-color', '#707070');
+        root.style.setProperty('--togle-color', 'white');
+        root.style.setProperty('--text-color', '#c7d5e0');
         textoModo.textContent = "Modo escuro";
         iconeModo.src = "./Img/dark_mode.png";
     }
