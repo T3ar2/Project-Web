@@ -77,12 +77,12 @@ function trocaLuz(){
     }
     else{
         modoAtual = "claro"
-        root.style.setProperty('--body-color', '#2a475e');
-        root.style.setProperty('--sidebar-color', '#1b2838');
-        root.style.setProperty('--primary-color', '#66c0f4');
+        root.style.setProperty('--body-color', '#E5E5E5');
+        root.style.setProperty('--sidebar-color', '#E5E5E5');
+        root.style.setProperty('--primary-color', '#ffffff');
         root.style.setProperty('--primary-color-light', '#f6f5f6');
-        root.style.setProperty('--togle-color', 'white');
-        root.style.setProperty('--text-color', '#c7d5e0');
+        root.style.setProperty('--togle-color', '#00000');
+        root.style.setProperty('--text-color', '#000000');
         textoModo.textContent = "Modo escuro";
         iconeModo.src = "./Img/dark_mode.png";
     }
